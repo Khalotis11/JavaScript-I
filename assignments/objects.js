@@ -19,26 +19,85 @@ const example = {
 
 // Write your intern objects here:
 
+const personOne = {
+  id : 1,
+  name : "Mitzi",
+  email : "mmelloy0@psu.edu",
+  gender: "F"
+}
+
+const personTwo = {
+  id : 2,
+  name : "Kennan",
+  email : "kdiben1@tinypic.com",
+  gender: "M"
+}
+
+
+
+const personThree = {
+  id : 3,
+  name : "Keven",
+  email : "kmummery2@wikimedia.org",
+  gender: "M"
+}
+
+const personFour = {
+  id : 4,
+  name : "Gannie",
+  email : "gmartinson3@illinois.edu",
+  gender: "M"
+}
+
+const personFive = {
+  id : 5,
+  name : "Antonietta",
+  email : "adaine5@samsung.com",
+  gender: "F"
+}
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-
+console.log(personOne.name)
 // Kennan's ID
-
+console.log(personTwo.id)
 // Keven's email
-
+console.log(personThree.email)
 // Gannie's name
-
+console.log(personFour.name)
 // Antonietta's Gender
-
+console.log(personFive.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+const personTwo = {
+  id : 2,
+  name : "Kennan",
+  email : "kdiben1@tinypic.com",
+  gender: "M",
+  sayHello : function(){
+    console.log("Hello, my name is" + ' ' + this.name + "!")
+  }
+}
+personTwo.sayHello();
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+const personFive = {
+  id : 5,
+  name : "Antonietta",
+  email : "adaine5@samsung.com",
+  gender: "F",
+  multiple : function (num1, num2){
+    return num1 * num2;
+  }
+}
+console.log(personFive.multiple(3, 4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
@@ -49,10 +108,11 @@ const example = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
 
 // Log the parent object's name
-
+name: "Susan",
+age: 70,
 // Log the child's age
 
 // Log the name and age of the grandchild
@@ -62,3 +122,4 @@ const parent = {}
 // Have the child speak
 
 // Have the grandchild speak
+}
